@@ -8,3 +8,5 @@ I finally made it to compile after all this years of being forgotten in a old ha
 So... now I made possible for you to use it :)
 
 Now you will probably hate me because you probably hate math, but I hate math too so ... idk ¯\_(ツ)_/¯
+
+BTW, make sure you download all files.
