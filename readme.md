@@ -1,4 +1,4 @@
-Hello
+<h1>Hellu</h1>
 My name is TheRealOne and this is a public project.
 
 It's a calculator. It's actually my first code I started when I was 5th grade, and yes, my first ever program wasn't a hello world program.
