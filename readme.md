@@ -12,7 +12,7 @@ Now you will probably hate me because you probably hate math, but I hate math to
 
 <h2>What language was this program created</h2>
 
-Since this was most realible and the language I know well, it was written in C++ with a little help of ``system()``.
+Since this was most reliable and the language I know well, it was written in C++ with a little help of ``system()``.
 
 <h2>How do I do to make this work?</h2>
 
