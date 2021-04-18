@@ -25,7 +25,7 @@ More about compiling at Compiling section.
 
 <h2>Compiling...</h2>
 
-You need first to download a C++ compiler. If you are a linux user, most probably you have already installed a GCC compiler. You can verify it by typing ``whereis G++`` in your terminal. If you don't you can download it with ``sudo apt-get install G++`` command.
+You need first to download a C++ compiler. If you are a linux user, most probably you have already installed a GCC compiler. You can verify it by typing ``whereis G++`` in your terminal. , you can download it with ``sudo apt-get install G++`` command.
 In windows, you can install the free version MinGW GCC <a href="https://sourceforge.net/projects/mingw/">here</a>.
 Install the MINGW manager, and install the G++ basic compiler.
 After that, you might want to path it to the system. To path it, in cmd run ``setx path "%PATH%;path_you_installed_mingw\bin"``.
