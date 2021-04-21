@@ -1,5 +1,6 @@
 #define CLS system("CLS"); //defines 'CLS;' as 'system(CLS);'
 
+//-Header Files---------------------------------------------------//
 #include <iostream>
 #include <fstream>
 #include <windows.h>
@@ -12,8 +13,7 @@
 #include <cstdlib>
 #include <string>
 #include <tchar.h>
-
-//#include <SFML/Audio.hpp> //has errors
+//----------------------------------------------------------------//
 
 using namespace std;//defines namespace as std, no need to use std::
 
