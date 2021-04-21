@@ -31,7 +31,7 @@ Install the MINGW manager, and install the G++ basic compiler.
 After that, you might want to path it to the system. To path it, in cmd run ``setx path "%PATH%;path_you_installed_mingw\bin"``.
 
 In order to compile the code, you need to put mylib.h file in include folder. If not, the code will not compile, and G++ will give errors.
-<b color="yellow">Note!</b> If you are using linux, change ``#define CLS system("CLS");`` in mylib.h to ``#define CLS system("clear");``, because linux uses clear command in order to clear the screen.
+<b>Note!</b> If you are using linux, change ``#define CLS system("CLS");`` in mylib.h to ``#define CLS system("clear");``, because linux uses clear command in order to clear the screen.
 
 To compile, in your terminal execute ``G++ -o calculator calculator.cpp``. Note that you need to be in the same directory with the cpp file.
 
@@ -42,16 +42,22 @@ After that you can run the file.
 First double click the executable file you compiled. In windows, it should end with ``.exe``.
 After that, a console window will apear.
 
-There it will ask you to type 2 numbers: the first you want to calculate, and the second you want to calculate.
+There it will ask you to type 2 numbers:
+<ol>
+  <li>The first you want to calculate</li>
+  <li>The second you want to calculate</li>
+</ol>
+
 Press enter and the results will be shown.
 
-After that, the program will be asking you if you want to calculate more things. You can chose n(no) or y(yes). You can also put uppercase letters. If you made a mistake, the programm will ask again for a letter.
+After that, the program will be asking you if you want to calculate more things. You can chose n(no) or y(yes). You can also put uppercase letters. If you made a mistake, the program will ask again for a letter.
+In case you run in a loop of errors because you probably entered not a 16 bit value into the char, then after 10 errors the calculator will exit with return 0x1 status.
 
 <h2>How do I configurate the ASCII file?</h2>
 
 You might want to add something else instead of math ASCII art. Math is pretty boring, as well should be an ASCII art of the word math.
 
-Open splash.ascii with any text editor, and replace or add there anything you want to display the calculator starts.
+Open SPLASH.ASCII with any text editor, eg.vim, and replace or add there anything you want to display the calculator starts.
 You might be also sure about the size of the console window... If the size is too small, the charcaters that should be in one line will go in another line. But probably it should be fine if it's a letter to grandma.
 
 After saving, you should see your change in my program...our program :)
