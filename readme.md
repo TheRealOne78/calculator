@@ -19,7 +19,7 @@ Since this was most reliable and the language I know well, it was written in C++
 First you need to download the code. You can type ``git clone https://github.com/3lia78/calculator.git`` in your git terminal at your specific directory, or you can download using the ``download zip`` button via ``Code`` button.
 BTW, make sure you download all files.
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/git_clone.png"></div>
+ <img src="http://therealone78.ddns.net/md/git_clone.png"> 
 
 Second you need to compile it using a compilator.
 A compilator is the program that translates human code, in this example C++, into PC binary code that an Operating System can understand.
@@ -31,20 +31,20 @@ You need first to download a C++ compiler. If you are a linux user, most probabl
 In windows, you can install the free version MinGW GCC <a href="https://sourceforge.net/projects/mingw/">here</a>.
 Install the MINGW manager, and install the G++ basic compiler.
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/MinGW.png"></div>
+ <img src="http://therealone78.ddns.net/md/MinGW.png"> 
 
 After that, you might want to path it to the system. To path it, in cmd run ``setx path "%PATH%;path_you_installed_mingw\bin"``.
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/setx.png"></div>
+ <img src="http://therealone78.ddns.net/md/setx.png"> 
 
 In order to compile the code, you need to put mylib.h file in include folder. If not, the code will not compile, and G++ will give errors.
 <b>Note!</b> If you are using linux, change ``#define CLS system("CLS");`` in mylib.h to ``#define CLS system("clear");``, because linux uses clear command in order to clear the screen.
 
 To compile, in your terminal execute ``G++ -o calculator calculator.cpp``. Note that you need to be in the same directory with the cpp file.
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/cd.png"></div>
+ <img src="http://therealone78.ddns.net/md/cd.png"> 
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/compile.png"></div>
+ <img src="http://therealone78.ddns.net/md/compile.png"> 
 
 After that you can run the file.
 
@@ -64,7 +64,7 @@ Press enter and the results will be shown.
 After that, the program will be asking you if you want to calculate more things. You can chose n(no) or y(yes). You can also put uppercase letters. If you made a mistake, the program will ask again for a letter.
 In case you run in a loop of errors because you probably entered not a 16 bit value into the char, then after 10 errors the calculator will exit with return 0x1 status.
 
-<div style="text-align:center"><img src="http://therealone78.ddns.net/md/exe.png"></div>
+ <img src="http://therealone78.ddns.net/md/exe.png"> 
 
 <h2>How do I configurate the ASCII file?</h2>
 
