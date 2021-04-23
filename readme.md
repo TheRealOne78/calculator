@@ -52,6 +52,7 @@ Press enter and the results will be shown.
 
 After that, the program will be asking you if you want to calculate more things. You can chose n(no) or y(yes). You can also put uppercase letters. If you made a mistake, the program will ask again for a letter.
 In case you run in a loop of errors because you probably entered not a 16 bit value into the char, then after 10 errors the calculator will exit with return 0x1 status.
+
 <img src="http://therealone78.ddns.net/md/exe.png">
 
 <h2>How do I configurate the ASCII file?</h2>
