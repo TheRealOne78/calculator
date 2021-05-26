@@ -1,3 +1,41 @@
-*.exe
-*.dll
+# -- Ignore Optional Files/Dirs ---
+
+
+# -- Ignore Images ----------------
+*.bmp
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# -- Ignore Videos ----------------
+*.mp4
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.avi
+*.webm
+
+# -- Ignore Audio ------------------
+*.mp3
+*.ogg
+*.wav
+*.pcm
+*.aac
+*.wma
+*.flac
+*.alac
+
+# -- Ignore Compiled ----------------
 *.o
+*.exe
+*.compiled
+
+# -- Ignore Archived ----------------
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+*.tar.gz
