@@ -16,7 +16,7 @@ Since this was most reliable and the language I know well, it was written in C++
 
 <h2>How do I do to make this work?</h2>
 
-First you need to download the code. You can type ``git clone https://github.com/3lia78/calculator.git`` in your git terminal at your specific directory, or you can download using the ``download zip`` button via ``Code`` button.
+First you need to download the code. You can type ``git clone https://github.com/therealone78/calculator.git`` in your git terminal at your specific directory, or you can download using the ``download zip`` button via ``Code`` button.
 BTW, make sure you download all files.
 
  <img src="http://therealone78.ddns.net/md/git_clone.png"> 
