@@ -1,5 +1,5 @@
 <h1>Hellu</h1>
-My name is TheRealOne and this is a public project.
+My name is TheRealOne78 and this is a FOSS.
 
 <h2>What is this program?</h2>
 It's a calculator. It's actually my first code I started when I was 5th grade, and yes, my first ever program wasn't a hello world program.
