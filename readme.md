@@ -23,7 +23,7 @@ BTW, make sure you download ***all*** files.
 
 Next you need to compile it using a compiler.
 A compiler is a program that translates human code, in this example C++, into computer binary code that a machine can understand.
-More about compiling at [compiling]("#Compiling...") section.
+More about compiling at [compiling](#compiling) section.
 
 <h2>Compiling...</h2>
 
