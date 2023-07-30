@@ -1,0 +1,30 @@
+SOURCE
+
+You can get a copy of the source code for this calculator project at
+https://github.com/TheRealOne78/calculator/.
+
+
+TERMS OF USE AND LICENSING
+
+The entire source code of this project is licensed under the GNU GPLv3+ license, including the `/assets/SPLASH.ASCII' file.
+
+The `/assets/SPLASH.ASCII' file contains "ASCII art" generated at 'http://patorjk.com/software/taag/'. The "ASCII art" font used to generate the contents of the '/assets/SPLASH.ASCII' file is "Slant Relief", formerly known as "Mega-relief".
+
+The copyright statement of the font's author complies with the GNU GPLv3+ license. As such, the entire source code is governed under the GNU GPLv3+ license. See font licensing and information below, in the `SLANT RELIEF FONT CREDITS' section.
+
+
+SLANT RELIEF FONT CREDITS
+
+Mega-relief by Nick Bryant 12/9, dmc1@st-and.ac.uk for the moment.
+Permission is hereby given to modify this font, as long as the
+modifier's name is placed on a comment line.
+
+Explanation of first line:
+flf2 - "magic number" for file identification
+a    - should always be `a', for now
+$    - the "hardblank" -- prints as a blank, but can't be smushed
+9    - height of a character
+9    - height of a character, not including descenders
+40   - max line length (excluding comment lines) + a fudge factor
+0    - default smushmode for this font
+15   - number of comment lines

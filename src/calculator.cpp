@@ -19,9 +19,9 @@
 
 #include <iostream>
 #include <fstream>
+#include <cstdint>
 
 #include "fancy-text.h"
-
 #ifndef _ERRORCOUNT
  #define _ERRORCOUNT 10
 #endif
@@ -29,10 +29,40 @@
 /* See if the user wants to restart or exit */
 uint8_t choice(void);
 
-int main(void) {
+int main(int argc, char *argv[]) {
   /* all numbers that needs to be converted */
   int64_t first, second, add, substract, multiply;
   double divide;
+
+  /* To check if arguments */
+  bool hasArgs = false;
+
+  /* check if arguments exist and if they meet expectations */
+  if(argc > 1) {
+    /* If not two arguments */
+    if(argc != 3) {
+      std::cerr << ERR_TEXT_PUTS "Expected zero or two arguments, but got " << argc << " arguments!\n Exiting..." << std::endl;
+      exit(1);
+    }
+
+    /* If exactly two args */
+    hasArgs = true;
+    /* Check if the args are numbers */
+    if (atoi(argv[1]) == 0 || atoi(argv[2]) == 0) {
+      /* Check if 1st arg is NaN */
+      if(atoi(argv[1]) == 0 && argv[1][0] != '0') {
+        std::cerr << ERR_TEXT_PUTS "First argument is not a number!\n Exiting..." << std::endl;
+        exit(1);
+      }
+
+      /* If 2nd arg is NaN */
+      std::cerr << ERR_TEXT_PUTS "Second argument is not a number!\n Exiting..." << std::endl;
+      exit(1);
+    }
+
+    first = atoi(argv[1]);
+    second = atoi(argv[2]);
+  }
 
   /* Output SPLASH.ASCII file to the console */
   std::cout << KBBLK; /* Switch color to gray */
@@ -46,10 +76,15 @@ int main(void) {
   std::cout << "The operation of calculation will be down...\n" << std::endl;
   std::cout << "=====================\n" << std::endl;
 
-  /* Run this program untill the user decides to stop */
+  /* Run this program until the user decides to stop */
   while(1) {
-    std::cout << "Input the first number: "; std::cin >> first;
-    std::cout << "Input the second number: "; std::cin >> second;
+    if(!hasArgs) {
+      std::cout << "Input the first number: "; std::cin >> first;
+      std::cout << "Input the second number: "; std::cin >> second;
+    }
+
+    /* Use arguments once */
+    hasArgs = false;
 
     // here will be calculated the numbers into more variables
     add = first + second;
