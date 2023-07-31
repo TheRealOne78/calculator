@@ -29,6 +29,10 @@
 /* See if the user wants to restart or exit */
 uint8_t choice(void);
 
+uint8_t getNum(int64_t *number);
+
+void clearInput();
+
 int main(int argc, char *argv[]) {
   /* all numbers that needs to be converted */
   int64_t first, second, add, substract, multiply;
@@ -73,14 +77,18 @@ int main(int argc, char *argv[]) {
   SPLASH.close();
 
   std::cout << "\n\n\nFor this operation, input the numbers you want to calculate." << std::endl;
-  std::cout << "The operation of calculation will be down...\n" << std::endl;
-  std::cout << "=====================\n" << std::endl;
+  std::cout << "The results are going to be displayed below ...\n" << std::endl;
+  std::cout << "==========================\n" << std::endl;
 
   /* Run this program until the user decides to stop */
   while(1) {
     if(!hasArgs) {
-      std::cout << "Input the first number: "; std::cin >> first;
-      std::cout << "Input the second number: "; std::cin >> second;
+      std::cout << "Input the first number: ";
+      if(getNum(&first) != 0)
+        continue;
+      std::cout << "Input the second number: ";
+      if(getNum(&second) != 0)
+        continue;
     }
 
     /* Use arguments once */
@@ -94,12 +102,12 @@ int main(int argc, char *argv[]) {
     std::cout << "\n";
 
     // here will output what was calculated
-    std::cout << "Assembly operation: " << add << std::endl;
-    std::cout << "Subtraction operation: " << substract << std::endl;
-    std::cout << "Multiplication operation: " << multiply << std::endl;
-    std::cout << "Splitting operation: " << divide << std::endl;
+    std::cout << "Assembly operation: " << add << "\n";
+    std::cout << "Subtraction operation: " << substract << "\n";
+    std::cout << "Multiplication operation: " << multiply << "\n";
+    std::cout << "Splitting operation: " << divide << "\n";
 
-    std::cout << "\n=====================" << std::endl;
+    std::cout << "\n==========================" << std::endl;
     std::cout << "\nContinue? (" KBGRN "Y" RST "/" KBRED "n" RST "): ";
     choice();
   }
@@ -108,27 +116,45 @@ int main(int argc, char *argv[]) {
 uint8_t choice(void) {
 /* here the user will input it's choice to exit or not */
   char choice;
-  uint8_t error;
+  uint8_t error = 0;
 
   while(1) {
     std::cin >> choice;
+    clearInput();
     switch(tolower(choice)) {
       case 'y':
         clear_term();
         return(0);
         break;
       case 'n':
+        std::cout << "\nGoodbye!" << std::endl;
         exit(EXIT_SUCCESS);
         break;
       default:
-        error++;
-        if(error >= _ERRORCOUNT) {
+        if(++error >= _ERRORCOUNT) {
           fprintf(stderr, "Too much encountered errors, exiting...\n");
           exit(EXIT_FAILURE);
         }
-        std::cout << "Invalid input. Please repeat: ";
+        std::cout << "\nInvalid input. Please repeat: ";
         continue;
         break;
     }
   }
+}
+
+uint8_t getNum(int64_t *number) {
+  if(scanf("%ld", number) == 0) {
+    std::cerr << ERR_TEXT_PUTS "Not a number!" << std::endl;
+    clearInput();
+    return 1;
+  }
+
+  clearInput();
+  return 0;
+}
+
+void clearInput() {
+  /* Clear input buffer */
+  while(std::cin.get() != '\n')
+    continue;
 }
