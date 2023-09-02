@@ -19,7 +19,7 @@ Since this was most reliable and the language I know well, it's written in C++ w
 First you need to download the code. You can type `git clone https://github.com/TheRealOne78/calculator.git` in your terminal, or you can download using the `download zip` button in `Code` dropdown menu button.
 BTW, make sure you download ***all*** files.
 
-![](https://therealone78.ddns.net/md/git_clone.png)
+![](./assets/md/git_clone.png)
 
 Next you need to compile it using a compiler.
 A compiler is a program that translates human code, in this example C++, into computer binary code that a machine can understand.
@@ -31,18 +31,18 @@ You need first to download a C++ compiler. If you are a GNU/Linux user, most pro
 In windows, you can install the free version MinGW GCC [here]("https://sourceforge.net/projects/mingw/")
 Install the MINGW manager, and install the G++ basic compiler.
 
-![](https://therealone78.ddns.net/md/MinGW.png)
+![](./assets/md/MinGW.png)
 
 After that, you might want to path it to the system. To path it, in cmd run `setx path "%PATH%;path_you_installed_mingw\bin"`.
 
-![](https://therealone78.ddns.net/md/setx.png)
+![](./assets/md/setx.png)
 
 To compile, in your terminal execute `g++ -o calculator ./src/*.c*`.<br>
 **Note** that you need to be in the root directory of the repository.
 
-![](https://therealone78.ddns.net/md/cd.png)
+![](./assets/md/cd.png)
 
-![](https://therealone78.ddns.net/md/compile.png)
+![](./assets/md/compile.png)
 
 After that you can run the file.
 
@@ -62,7 +62,7 @@ Press enter and the results will be shown.
 After that, the program will be asking you if you want to calculate more things. You can chose n(no) or y(yes). You can also put uppercase letters. If you made a mistake, the program will ask again for a letter.
 In case you run in a loop of errors because you probably entered not a 16 bit value into the char, then after 10 errors the calculator will exit with return 0x1 status.
 
-![](https://therealone78.ddns.net/md/exe.png)
+![](./assets/md/exe.png)
 
 <h2>How do I configure the ASCII file?</h2>
 
